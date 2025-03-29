@@ -1,0 +1,161 @@
+{
+    "siteInfo": {
+      "siteName": "KRIA Centro",
+      "slug": "kria-centro",
+      "mainColor": "#8B0000",
+      "accentColor": "#ffc373",
+      "description": "Retreats und Heilbegleitung im peruanischen Amazonas."
+    },
+    "navigation": [
+      {
+        "label": "Home",
+        "path": "/"
+      },
+      {
+        "label": "Retreats",
+        "path": "/retreats"
+      },
+      {
+        "label": "Ayahuasca",
+        "path": "/ayahuasca"
+      },
+      {
+        "label": "Heilbegleitung",
+        "path": "/heilbegleitung"
+      },
+      {
+        "label": "FAQ",
+        "path": "/faq"
+      },
+      {
+        "label": "Reisedetails",
+        "path": "/reisedetails"
+      },
+      {
+        "label": "Kontakt",
+        "path": "/kontakt"
+      }
+    ],
+    "heroSection": {
+      "headline": "KRIA Centro – Finde deine innere Ruhe im Amazonas",
+      "subheadline": "Begib dich auf eine Reise zu dir selbst.",
+      "backgroundImage": "images/hero_kria_centro.jpg",
+      "ctaText": "Jetzt Retreat anfragen",
+      "ctaLink": "/retreats"
+    },
+    "retreats": [
+      {
+        "title": "Retreat 5 Tage",
+        "slug": "retreat-5-tage",
+        "price": 890,
+        "description": "Intensive Kurzreise in den Dschungel (4 Übernachtungen, 4 Abende mit Zeremonie, Verpflegung). An- und Abreise nach Peru auf eigene Kosten.",
+        "included": [
+          "4 Übernachtungen im KRIA Resort",
+          "Tägliche Mahlzeiten",
+          "4 Zeremonie-Abende",
+          "Vorbereitende Gespräche in Deutschland",
+          "Detox-Programm vorab"
+        ],
+        "image": "images/retreat_5days.jpg",
+        "nextDates": [
+          "Juni 2025",
+          "Herbst 2025"
+        ]
+      },
+      {
+        "title": "Retreat 10 Tage",
+        "slug": "retreat-10-tage",
+        "price": 1490,
+        "description": "Vertiefte Erfahrung mit Verlängerung auf bis zu 10 Tage. Mehr Zeit für Heilung, intensivere Zeremonien und Ausflüge.",
+        "included": [
+          "9 Übernachtungen",
+          "Tägliche Mahlzeiten",
+          "Mehrere Zeremonie-Abende",
+          "Tagesausflug ins Naturschutzgebiet",
+          "Betreuung und Reflexionsgespräche"
+        ],
+        "image": "images/retreat_10days.jpg",
+        "nextDates": [
+          "Juni 2025",
+          "Herbst 2025"
+        ]
+      }
+    ],
+    "offers": [
+      {
+        "title": "Ayahuasca Zeremonie",
+        "slug": "ayahuasca",
+        "price": 150,
+        "description": "Teilnahme an einer abendlichen Zeremonie, vor Ort zahlbar. Unterstützung durch erfahrene Begleitung.",
+        "image": "images/ayahuasca_night.jpg"
+      },
+      {
+        "title": "Private Session - Heilbegleitung",
+        "slug": "heilbegleitung",
+        "price": 180,
+        "description": "1:1 schamanische Begleitung, individuelle Reflexion und energetische Reinigung.",
+        "image": "images/healing_touch.jpg"
+      }
+    ],
+    "reisedetails": {
+      "mapImage": "images/peru_map.jpg",
+      "infoText": "Du fliegst nach Lima (Peru), optional per Nachtbus oder Inlandsflug weiter nach Pucallpa. Von dort aus geht es per Boot oder Propellermaschine nach Contamana. In der Kommune Canaan de Cachiyacu liegt unser KRIA Resort.",
+      "pdfLinks": [
+        {
+          "label": "Ausführliches PDF (Flyer I)",
+          "url": "/docs/KRIA_Retreat_Flyer_I.pdf"
+        },
+        {
+          "label": "Vertrag",
+          "url": "/docs/KRIA_Retreat_Vertrag.pdf"
+        }
+      ]
+    },
+    "faq": [
+      {
+        "question": "Welche Kosten entstehen insgesamt?",
+        "answer": "Rechne mit ca. 200 Euro pro Tag Aufenthalt plus Anreise (Flug, Boot, etc.). Im Schnitt liegen die Gesamtkosten bei 2500 - 3000 Euro."
+      },
+      {
+        "question": "Ist eine besondere gesundheitliche Vorbereitung nötig?",
+        "answer": "Wir empfehlen ein 2-wöchiges Detox-Programm vorab. Informiere uns über Vorerkrankungen oder Allergien."
+      },
+      {
+        "question": "Kann ich den Aufenthalt verlängern?",
+        "answer": "Ja, gegen Aufpreis. Sprich uns an und buche gerne 10 Tage, wenn du mehr Zeit brauchst."
+      }
+    ],
+    "imageGallery": [
+      {
+        "filename": "images/retreat_group.jpg",
+        "alt": "Retreat-Gruppe im Amazonas"
+      },
+      {
+        "filename": "images/maloca_night.jpg",
+        "alt": "Maloca bei Nacht"
+      },
+      {
+        "filename": "images/vegan_meal.jpg",
+        "alt": "Veganer Teller während des Retreats"
+      },
+      {
+        "filename": "images/jungle_path.jpg",
+        "alt": "Dschungelpfad nahe des Camps"
+      }
+    ],
+    "utmTracking": true,
+    "footer": {
+      "legalLinks": [
+        {
+          "label": "Impressum",
+          "path": "/impressum"
+        },
+        {
+          "label": "Datenschutz",
+          "path": "/datenschutz"
+        }
+      ],
+      "footerColor": "#8B0000",
+      "footerText": "© 2025 KRIA Centro"
+    }
+  }
