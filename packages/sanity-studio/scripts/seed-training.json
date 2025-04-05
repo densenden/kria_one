@@ -1,0 +1,79 @@
+[
+  {
+    "cta": {
+      "link": "/#kontakt",
+      "text": "Kostenlose Beratung"
+    },
+    "_createdAt": "2025-04-04T20:10:30Z",
+    "hero": {
+      "claim": "Stärke beginnt in dir.",
+      "videoId": "iw5vNBa5O1Q",
+      "subline": "Personal Training, Mental Coaching und funktionale Ernährung in Hamburg."
+    },
+    "services": [
+      {
+        "link": "/personal-training",
+        "description": "Individuelles Training mit Fokus auf deine Ziele. Kraft, Beweglichkeit und funktionales Training.",
+        "title": "Personal Training"
+      },
+      {
+        "link": "/mental-coaching",
+        "description": "Achtsamkeit, Atmung und mentale Stärke für mehr Leistungsklarheit.",
+        "title": "Mental Coaching"
+      },
+      {
+        "link": "/ernaehrung",
+        "description": "Funktionale, pflanzliche Ernährung für optimale Performance.",
+        "title": "Ernährungsberatung"
+      }
+    ],
+    "_updatedAt": "2025-04-04T20:10:30Z",
+    "quote": {
+      "author": "Remo Icochea Alvarez",
+      "text": "Stärke beginnt in dir."
+    },
+    "_rev": "Oks1fihBzHq0KNvbkNhzqW",
+    "_type": "homepage",
+    "_id": "Oks1fihBzHq0KNvbkNhzuF"
+  },
+  {
+    "category": "training",
+    "title": "Personal Training Starter",
+    "slug": {
+      "current": "personal-training-starter",
+      "_type": "slug"
+    },
+    "cta": {
+      "text": "Jetzt buchen",
+      "link": "/personal-training#buchen"
+    },
+    "_type": "angebot",
+    "description": "Dein Einstieg in bewusstes Training. 60 Minuten individuelles Training mit Analyse deiner Bewegungsmuster und Zielsetzung.",
+    "_id": "Oks1fihBzHq0KNvbkNi0O3",
+    "_updatedAt": "2025-04-04T20:10:32Z",
+    "price": 95,
+    "_createdAt": "2025-04-04T20:10:32Z",
+    "_rev": "Oks1fihBzHq0KNvbkNi0KK"
+  },
+  {
+    "description": "Tiefe Atemarbeit zur Öffnung von Energiekanälen und mentaler Klarheit. In der Gruppe – maximal 5 Teilnehmer. 2 Std. intensive Begleitung.",
+    "participantsMax": 5,
+    "_updatedAt": "2025-04-04T20:10:31Z",
+    "slug": {
+      "current": "spiralatmung-intensiv",
+      "_type": "slug"
+    },
+    "_rev": "rAgni52qy64I34buVvRvCe",
+    "videoId": "OSilaFjxey8",
+    "title": "Spiralatmung Intensiv",
+    "cta": {
+      "link": "/gruppenangebote#spiralatmung",
+      "text": "Platz reservieren"
+    },
+    "price": 245,
+    "_createdAt": "2025-04-04T20:10:31Z",
+    "_id": "rAgni52qy64I34buVvRvEP",
+    "category": "group",
+    "_type": "angebot"
+  }
+]

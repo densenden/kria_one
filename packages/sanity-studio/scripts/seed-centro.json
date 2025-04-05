@@ -1,0 +1,41 @@
+[
+  {
+    "_rev": "HcQlu674QGhrjTpsJmV4I2",
+    "_type": "heilbegleitung",
+    "hero": {
+      "cta": {
+        "link": "/heilbegleitung#anfrage",
+        "text": "Jetzt Session anfragen"
+      },
+      "quote": {
+        "text": "Heilung ist nicht das Ziel. Es ist der Weg.",
+        "author": "Remo Icochea Alvarez"
+      },
+      "claim": "Individuelle Heilbegleitung",
+      "subline": "In Einzel-Sessions begleite ich dich durch körperliche, seelische und mentale Prozesse."
+    },
+    "_id": "HcQlu674QGhrjTpsJmV4Jl",
+    "_updatedAt": "2025-04-04T20:10:31Z",
+    "_createdAt": "2025-04-04T20:10:31Z"
+  },
+  {
+    "durationDays": 10,
+    "_createdAt": "2025-04-04T20:10:30Z",
+    "_type": "retreat",
+    "description": "Tiefgreifende Reise durch Heilung, Natur und bewusstes Erleben. Inmitten des peruanischen Regenwalds kommst du mit dir selbst in Kontakt – begleitet von traditionellen Ritualen, veganer Ernährung und natürlicher Ruhe.",
+    "title": "10-Tage Amazon-Retreat",
+    "pricePerDay": 200,
+    "startDates": [
+      "2025-06-15T00:00:00.000Z",
+      "2025-10-01T00:00:00.000Z"
+    ],
+    "_rev": "sXVsSmU81EJjEYkHCx5vku",
+    "videoId": "iw5vNBa5O1Q",
+    "_id": "sXVsSmU81EJjEYkHCx5vpK",
+    "_updatedAt": "2025-04-04T20:10:30Z",
+    "slug": {
+      "current": "10-tage-amazon-retreat",
+      "_type": "slug"
+    }
+  }
+]
