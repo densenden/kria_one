@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Navbar from './components/Navbar';
@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Kria Centro',
-  description: 'Spirituelles Zentrum für ganzheitliche Heilung und inneres Wachstum',
+  description: 'Ihr Zentrum für ganzheitliches Wohlbefinden',
 };
 
 export default function RootLayout({

@@ -4,17 +4,29 @@
   "version": "1.0.0",
   "packageManager": "pnpm@10.6.5",
   "scripts": {
-    "dev": "pnpm --filter \"@kria-one/*\" dev",
-    "build": "pnpm --filter \"@kria-one/*\" build",
+    "dev": "pnpm clean && pnpm build:packages && pnpm dev:training",
+    "dev:training": "cd apps/kria-training && pnpm dev --port 3002",
+    "dev:centro": "cd apps/kria-centro && pnpm dev --port 3001",
+    "dev:admin": "cd apps/admin && pnpm dev --port 3003",
+    "dev:ui": "cd packages/ui && pnpm dev",
+    "dev:sanity": "cd packages/sanity-client && pnpm dev",
+    "build:packages": "pnpm --filter \"@kria-one/sanity-client\" --filter \"@kria-one/ui\" build",
+    "build": "pnpm build:packages && pnpm --filter \"@kria-one/*\" build",
     "start": "pnpm --filter \"@kria-one/*\" start",
     "lint": "pnpm --filter \"@kria-one/*\" lint",
+    "clean": "rm -rf **/dist **/.next node_modules/.cache",
     "import-data": "ts-node scripts/import-data.ts"
   },
   "dependencies": {
     "@sanity/client": "^6.15.7",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "react-day-picker": "^8.10.0",
+    "date-fns": "^3.3.1",
+    "@stripe/stripe-js": "^2.4.0",
+    "@stripe/react-stripe-js": "^2.1.0"
   },
   "devDependencies": {
+    "@swc/core": "^1.11.16",
     "@types/node": "^22.14.0"
   }
 }

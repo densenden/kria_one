@@ -31,18 +31,18 @@ export default function Navbar() {
   const navItems = [
     { name: 'Startseite', href: '/' },
     { name: 'Über Uns', href: '/ueber-uns' },
-    { name: 'Retreats', href: '/retreats' },
-    { name: 'Heilbegleitung', href: '/heilbegleitung' },
+    { name: 'Angebote', href: '/angebote' },
+    { name: 'Räumlichkeiten', href: '/raeumlichkeiten' },
+    { name: 'Events', href: '/events' },
     { name: 'Blog', href: '/blog' },
-    { name: 'Referenzen', href: '/referenzen' },
-    { name: 'FAQ', href: '/faq' },
     { name: 'Kontakt', href: '/kontakt' },
   ];
 
-  const specialPrograms = [
-    { name: 'Spirituelle Begleitung', href: '/spirituelle-begleitung' },
-    { name: 'Yoga', href: '/yoga' },
+  const specialServices = [
     { name: 'Meditation', href: '/meditation' },
+    { name: 'Yoga', href: '/yoga' },
+    { name: 'Heilarbeit', href: '/heilarbeit' },
+    { name: 'Workshops', href: '/workshops' },
   ];
 
   return (
@@ -81,7 +81,7 @@ export default function Navbar() {
               </Link>
             ))}
             
-            {/* Special Programs Dropdown */}
+            {/* Special Services Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -89,7 +89,7 @@ export default function Navbar() {
                   scrolled ? 'text-gray-600 hover:text-blue-600' : 'text-white hover:text-blue-100'
                 }`}
               >
-                Programme
+                Angebote
                 <svg 
                   className={`ml-1 h-4 w-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} 
                   fill="none" 
@@ -106,15 +106,15 @@ export default function Navbar() {
                   className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-40"
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
-                  {specialPrograms.map((program) => (
+                  {specialServices.map((service) => (
                     <Link 
-                      key={program.href} 
-                      href={program.href}
+                      key={service.href} 
+                      href={service.href}
                       className={`block px-4 py-2 text-sm hover:bg-gray-100 ${
-                        pathname === program.href ? 'text-blue-600' : 'text-gray-700'
+                        pathname === service.href ? 'text-blue-600' : 'text-gray-700'
                       }`}
                     >
-                      {program.name}
+                      {service.name}
                     </Link>
                   ))}
                 </div>
@@ -167,7 +167,7 @@ export default function Navbar() {
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600"
               >
-                <span>Programme</span>
+                <span>Angebote</span>
                 <svg 
                   className={`h-4 w-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} 
                   fill="none" 
@@ -180,17 +180,17 @@ export default function Navbar() {
               
               {isDropdownOpen && (
                 <div className="pl-4">
-                  {specialPrograms.map((program) => (
+                  {specialServices.map((service) => (
                     <Link 
-                      key={program.href} 
-                      href={program.href}
+                      key={service.href} 
+                      href={service.href}
                       className={`block px-3 py-2 rounded-md text-base font-medium ${
-                        pathname === program.href
+                        pathname === service.href
                           ? 'text-blue-600'
                           : 'text-gray-600 hover:bg-gray-50 hover:text-blue-600'
                       }`}
                     >
-                      {program.name}
+                      {service.name}
                     </Link>
                   ))}
                 </div>
