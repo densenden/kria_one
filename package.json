@@ -1,0 +1,20 @@
+{
+  "name": "kria-one",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.6.5",
+  "scripts": {
+    "dev": "pnpm --filter \"@kria-one/*\" dev",
+    "build": "pnpm --filter \"@kria-one/*\" build",
+    "start": "pnpm --filter \"@kria-one/*\" start",
+    "lint": "pnpm --filter \"@kria-one/*\" lint",
+    "import-data": "ts-node scripts/import-data.ts"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.15.7",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0"
+  }
+}

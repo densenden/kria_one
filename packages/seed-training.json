@@ -1,0 +1,150 @@
+{
+  "_type": "siteContent",
+  "site": "kria-training",
+  "hero": {
+    "page": "home",
+    "title": "KRIA Training",
+    "claim": "Stärke beginnt in dir.",
+    "subline": "Ganzheitliches Training für Körper, Geist und Bewusstsein.",
+    "quote": {
+      "text": "Wenn du deinen Körper führst, folgt dein Geist.",
+      "author": "Remo Icochea Alvarez"
+    },
+    "cta": {
+      "text": "Jetzt kostenloses Erstgespräch",
+      "link": "/preise#erstgespraech"
+    },
+    "image": {
+      "fileName": "clip_personal_training_thumbnail.jpg",
+      "alt": "Remo zeigt Klientin eine Kniebeuge mit Kettlebell",
+      "caption": "Werde stark. Beweg dich bewusst."
+    },
+    "seo": {
+      "metaTitle": "KRIA Training – Personal Training & Coaching in Frankfurt",
+      "metaDescription": "Entfalte dein volles Potenzial mit Personal Training, Mental Coaching und achtsamer Ernährung. Individuell begleitet von Kurt Remo Icochea Alvarez."
+    }
+  },
+  "angebote": [
+    {
+      "_type": "angebot",
+      "slug": {
+        "current": "personal-training"
+      },
+      "title": "Personal Training",
+      "description": "Individuelles 1:1 Training mit Fokus auf Bewegung, Atem, Haltung und Kraft. Du wirst begleitet, korrigiert und mental gestärkt. Geeignet für Anfänger und Profisportler.",
+      "longDescription": "Im Personal Training arbeiten wir gemeinsam an deiner Körperwahrnehmung, Haltung und Bewegungsqualität. Durch funktionelles Training mit dem eigenen Körpergewicht und Zusatzgeräten wie Kettlebells entwickelst du Kraft, Beweglichkeit und Koordination. Die Übungen werden individuell an dein Level und deine Ziele angepasst.",
+      "benefits": [
+        "Individuelle Betreuung und Korrektur",
+        "Funktionelles Ganzkörpertraining",
+        "Verbesserung von Haltung und Beweglichkeit",
+        "Aufbau von Kraft und Muskeln",
+        "Integration von Atemtechniken",
+        "Mentale Stärkung durch Körperarbeit"
+      ],
+      "price": 90,
+      "duration": "60 Minuten",
+      "bookingType": "stripe",
+      "video": {
+        "type": "youtube",
+        "value": "OSilaFjxey8"
+      },
+      "image": {
+        "fileName": "clip_personal_training_thumbnail.jpg",
+        "alt": "Personal Training: Haltungskorrektur in Bewegung"
+      },
+      "cta": {
+        "text": "Jetzt Termin buchen",
+        "link": "/personal-training#buchung"
+      },
+      "seo": {
+        "metaTitle": "Personal Training in Frankfurt – KRIA",
+        "metaDescription": "Stärke deinen Körper und dein Selbstvertrauen mit gezieltem Personal Training von KRIA – bewusst, individuell und achtsam."
+      }
+    },
+    {
+      "_type": "angebot",
+      "slug": {
+        "current": "mental-coaching"
+      },
+      "title": "Mentales Coaching",
+      "description": "Achtsamkeit, Klarheit und Fokus – mit geführter Atemarbeit, innerem Dialog und körperlichem Ausdruck. Ideal bei Überforderung, Zielsuche oder zur Leistungssteigerung.",
+      "longDescription": "Im Mental Coaching verbinden wir Körper und Geist durch bewusste Atemarbeit, Meditation und achtsame Bewegung. Du lernst Techniken zur Stressreduktion, Fokussierung und emotionalen Balance. Wir arbeiten an deiner inneren Haltung und mentalen Stärke, um deine persönlichen und beruflichen Ziele zu erreichen.",
+      "benefits": [
+        "Stressabbau und Entspannung",
+        "Verbesserte Konzentration",
+        "Emotionale Balance",
+        "Klare Zielsetzung",
+        "Persönlichkeitsentwicklung",
+        "Integration von Körper und Geist"
+      ],
+      "price": 120,
+      "duration": "90 Minuten",
+      "bookingType": "stripe",
+      "video": {
+        "type": "youtube",
+        "value": "iw5vNBa5O1Q"
+      },
+      "image": {
+        "fileName": "clip_mental_coaching_thumbnail.jpg",
+        "alt": "Remo führt einen Klienten durch Atemarbeit"
+      },
+      "cta": {
+        "text": "Mentales Coaching anfragen",
+        "link": "/mental-coaching#kontakt"
+      },
+      "seo": {
+        "metaTitle": "Mental Coaching & Atemarbeit – KRIA Frankfurt",
+        "metaDescription": "Körper und Geist in Einklang bringen – mit KRIA Mental Coaching für Klarheit und Fokus im Alltag, Sport und Beruf."
+      }
+    }
+  ],
+  "preise": [
+    {
+      "_type": "preis",
+      "title": "Erstgespräch",
+      "description": "Kostenloses Kennenlerngespräch (30 Min)",
+      "details": "Wir besprechen deine Ziele und Wünsche und finden heraus, ob wir zusammenpassen.",
+      "amount": 0,
+      "duration": "30 Minuten",
+      "isHighlighted": true
+    },
+    {
+      "_type": "preis",
+      "title": "Einzelstunde",
+      "description": "Personal Training (60 Min)",
+      "details": "Individuelles Training mit voller Aufmerksamkeit und Betreuung.",
+      "amount": 90,
+      "duration": "60 Minuten"
+    },
+    {
+      "_type": "preis",
+      "title": "10er Karte",
+      "description": "Personal Training (10x 60 Min)",
+      "details": "Spare 10% beim Kauf einer 10er Karte.",
+      "amount": 810,
+      "duration": "60 Minuten pro Einheit",
+      "isHighlighted": true
+    }
+  ],
+  "kontakt": {
+    "_type": "kontakt",
+    "title": "Kontakt",
+    "description": "Hast du Fragen oder möchtest du einen Termin vereinbaren? Ich freue mich auf deine Nachricht.",
+    "email": "remo@kria-training.de",
+    "phone": "+49 176 72942838",
+    "address": {
+      "street": "Hanauer Landstraße 147",
+      "city": "60314 Frankfurt am Main",
+      "country": "Deutschland"
+    },
+    "socialMedia": {
+      "instagram": "https://www.instagram.com/kria.training/",
+      "youtube": "https://www.youtube.com/@kriatraining"
+    },
+    "map": {
+      "lat": 50.1164,
+      "lng": 8.7157,
+      "zoom": 15
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "_type": "siteContent",
+  "site": "kria-centro",
+  "hero": {
+    "page": "home",
+    "title": "KRIA Centro",
+    "claim": "Dein Weg zur inneren Kraft",
+    "subline": "Heilsame Retreats und Begleitung in der Tradition der Medizinmänner Amazoniens.",
+    "quote": {
+      "text": "Der Weg zur Heilung beginnt mit dem ersten Schritt nach innen.",
+      "author": "Remo Icochea Alvarez"
+    },
+    "cta": {
+      "text": "Retreat buchen",
+      "link": "/retreats#amazon"
+    },
+    "image": {
+      "fileName": "hero_amazon.jpg",
+      "alt": "Sonnenuntergang im Amazonas",
+      "caption": "Finde zu dir selbst. In der Kraft der Natur."
+    },
+    "seo": {
+      "metaTitle": "KRIA Centro – Heilsame Retreats & Begleitung",
+      "metaDescription": "Entdecke die heilende Kraft der amazonischen Tradition. Retreats und individuelle Begleitung mit Remo Icochea Alvarez."
+    }
+  },
+  "retreats": [
+    {
+      "_type": "retreat",
+      "slug": {
+        "current": "amazon-retreat"
+      },
+      "title": "10-Tage Amazon-Retreat",
+      "subtitle": "Transformation in der Kraft des Urwalds",
+      "description": "Eine tiefgreifende Reise zu dir selbst im Herzen des Amazonas. Erlebe traditionelle Heilzeremonien, Meditation und Körperarbeit in der kraftvollen Natur des Regenwalds.",
+      "longDescription": "Das 10-tägige Retreat im peruanischen Amazonasgebiet ist eine einzigartige Gelegenheit für persönliche Transformation und Heilung. In der ursprünglichen Kraft des Regenwalds arbeiten wir mit traditionellen Heilmethoden, Pflanzenmedizin und Zeremonien. Die Kombination aus Einzelsitzungen, Gruppenarbeit und Zeit für Selbstreflexion in der Natur ermöglicht tiefgreifende Veränderungen.",
+      "includes": [
+        "Traditionelle Heilzeremonien",
+        "Meditation und Atemarbeit",
+        "Körperarbeit in der Natur",
+        "Einzelsitzungen",
+        "Unterkunft und Verpflegung",
+        "Transfers vor Ort"
+      ],
+      "details": {
+        "duration": "10 Tage",
+        "location": "Amazonas, Peru",
+        "groupSize": "max. 12 Teilnehmer",
+        "language": "Deutsch & Spanisch",
+        "accommodation": "Einfache, naturnahe Unterkünfte",
+        "prerequisites": "Gesundheitsfragebogen, Vorgespräch"
+      },
+      "dates": [
+        {
+          "start": "2024-07-15",
+          "end": "2024-07-24",
+          "price": 2800,
+          "availability": "verfügbar"
+        },
+        {
+          "start": "2024-09-02",
+          "end": "2024-09-11",
+          "price": 2800,
+          "availability": "wenige Plätze"
+        }
+      ],
+      "price": 2800,
+      "startDate": "2024-07-15",
+      "duration": "10 Tage",
+      "image": {
+        "fileName": "retreat_amazon.jpg",
+        "alt": "Meditation im Amazonas"
+      },
+      "gallery": [
+        {
+          "fileName": "amazon_1.jpg",
+          "alt": "Traditionelle Zeremonie"
+        },
+        {
+          "fileName": "amazon_2.jpg",
+          "alt": "Meditation am Fluss"
+        },
+        {
+          "fileName": "amazon_3.jpg",
+          "alt": "Gruppenbild im Regenwald"
+        }
+      ],
+      "cta": {
+        "text": "Retreat anfragen",
+        "link": "/retreats/amazon#anfrage"
+      },
+      "seo": {
+        "metaTitle": "Amazon Retreat 2024 – KRIA Centro",
+        "metaDescription": "10 Tage Transformation im Amazonas. Traditionelle Heilzeremonien, Meditation und Körperarbeit in der Kraft des Regenwalds."
+      }
+    }
+  ],
+  "heilangebote": [
+    {
+      "_type": "heilbegleitung",
+      "slug": {
+        "current": "private-session"
+      },
+      "title": "Private Session – Heilbegleitung",
+      "subtitle": "Individuelle Begleitung auf deinem Weg",
+      "description": "In einer privaten Session arbeiten wir gezielt an deinen Themen. Mit traditionellen Heilmethoden, Energiearbeit und achtsamer Körperarbeit unterstütze ich dich auf deinem Weg zu mehr Klarheit und innerer Kraft.",
+      "longDescription": "Die private Heilbegleitung ist ein geschützter Raum für deine persönliche Entwicklung und Heilung. Basierend auf der Weisheit der amazonischen Heiltradition und modernen ganzheitlichen Ansätzen arbeiten wir mit verschiedenen Methoden wie Energiearbeit, Meditation, Atemtechniken und sanfter Körperarbeit. Jede Session wird individuell auf deine Bedürfnisse und Themen abgestimmt.",
+      "methods": [
+        "Traditionelle Heilmethoden",
+        "Energetische Reinigung",
+        "Geführte Meditation",
+        "Atemarbeit",
+        "Körperarbeit",
+        "Gesprächsbegleitung"
+      ],
+      "benefits": [
+        "Lösung von Blockaden",
+        "Emotionale Balance",
+        "Stressreduktion",
+        "Mehr Klarheit und Fokus",
+        "Verbindung zu innerer Kraft",
+        "Ganzheitliche Heilung"
+      ],
+      "price": 120,
+      "duration": "90 Minuten",
+      "location": {
+        "name": "KRIA Centro",
+        "address": "Hanauer Landstraße 147, 60314 Frankfurt"
+      },
+      "image": {
+        "fileName": "heilbegleitung.jpg",
+        "alt": "Heilbegleitung Session"
+      },
+      "cta": {
+        "text": "Session anfragen",
+        "link": "/heilbegleitung#kontakt"
+      },
+      "seo": {
+        "metaTitle": "Heilbegleitung & Energiearbeit – KRIA Centro Frankfurt",
+        "metaDescription": "Individuelle Heilbegleitung in der Tradition Amazoniens. Löse Blockaden und finde zu deiner inneren Kraft."
+      }
+    }
+  ],
+  "kontakt": {
+    "_type": "kontakt",
+    "title": "Kontakt",
+    "description": "Möchtest du mehr über unsere Retreats oder Heilbegleitung erfahren? Ich freue mich auf deine Nachricht.",
+    "email": "remo@kria-centro.de",
+    "phone": "+49 176 72942838",
+    "address": {
+      "street": "Hanauer Landstraße 147",
+      "city": "60314 Frankfurt am Main",
+      "country": "Deutschland"
+    },
+    "socialMedia": {
+      "instagram": "https://www.instagram.com/kria.centro/",
+      "youtube": "https://www.youtube.com/@kriacentro"
+    },
+    "map": {
+      "lat": 50.1164,
+      "lng": 8.7157,
+      "zoom": 15
+    }
+  }
+}

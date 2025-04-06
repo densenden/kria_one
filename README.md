@@ -1,39 +1,9 @@
----
+# Sanity Clean Content Studio
 
-## Development & Deployment
+Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
 
-1. **Install**  
-   `npm install` (or `yarn install`)
+Now you can do the following things:
 
-2. **Run Sanity Studio**  
-   - Go to `packages/sanity` and run `npm run dev` to start the CMS locally.
-
-3. **Local Development**  
-   - `cd apps/kria-training && npm run dev`
-   - `cd apps/kria-centro && npm run dev`
-   Each site runs on a different port, e.g. `http://localhost:3000` and `http://localhost:3001`.
-
-4. **Deployment**  
-   - Push to GitHub; Vercel builds each app separately.
-   - Configure two projects in Vercel, pointing to `apps/kria-training` and `apps/kria-centro`.
-
----
-
-## Next Steps
-
-- Integrate **Stripe** test keys and set up products/offers in the CMS.
-- Add i18n logic for language toggles (English/Spanish).
-- Implement booking forms with dynamic availability if needed (e.g., group size limits).
-- Configure analytics and ensure UTM parameters are logged or handled.
-
----
-
-## Contributing
-
-- Use feature branches with clear commit messages (`feat:`/`fix:`/`chore:`).
-- Submit pull requests for any new components or CMS fields.
-- Update this README if major structural or process changes occur.
-
----
-
-© 2025 KRIA – Shaping Mind & Body
+- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
+- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
+- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
