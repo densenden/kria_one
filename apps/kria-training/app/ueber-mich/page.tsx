@@ -1,121 +1,58 @@
 import { client } from '../../lib/sanity'
 
-export default async function UeberMichPage() {
-  const about = await client.fetch(`*[_type == "about"][0]`)
-
+export default function UeberMich() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="text-center">
-          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            Über Mich
-          </h1>
-          <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            {about?.subtitle}
+    <div className="container section">
+      <h1>Über Mich</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="card">
+          <h2>Meine Geschichte</h2>
+          <p>
+            Als zertifizierter Personal Trainer und Ernährungsberater habe ich mich auf ganzheitliches Training spezialisiert. 
+            Meine Leidenschaft für Gesundheit und Fitness begann vor über 10 Jahren, als ich selbst eine persönliche Transformation durchlebte.
+          </p>
+          <p>
+            Nach meiner Ausbildung zum Personal Trainer und verschiedenen Weiterbildungen in den Bereichen Ernährung, 
+            Rückengesundheit und Stressmanagement, gründete ich KRIA Training. Mein Ziel ist es, Menschen dabei zu helfen, 
+            ihre Gesundheit und ihr Wohlbefinden nachhaltig zu verbessern.
           </p>
         </div>
-      </section>
-
-      {/* Bio Section */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              {about?.image && (
-                <img
-                  src={about.image}
-                  alt="Remo Icochea Alvarez"
-                  className="rounded-lg shadow-lg"
-                />
-              )}
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                {about?.name}
-              </h2>
-              <div className="prose prose-lg text-gray-500">
-                {about?.bio}
-              </div>
-              <div className="mt-8 space-y-4">
-                {about?.qualifications?.map((qual: string, index: number) => (
-                  <div key={index} className="flex items-start">
-                    <svg
-                      className="h-6 w-6 text-green-500 mr-2"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span className="text-gray-600">{qual}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+        
+        <div className="card">
+          <h2>Meine Qualifikationen</h2>
+          <ul className="space-y-4">
+            <li>
+              <h3 className="font-semibold">Zertifizierter Personal Trainer</h3>
+              <p>Deutsche Hochschule für Prävention und Gesundheitsmanagement</p>
+            </li>
+            <li>
+              <h3 className="font-semibold">Ernährungsberater</h3>
+              <p>Deutsche Gesellschaft für Ernährung</p>
+            </li>
+            <li>
+              <h3 className="font-semibold">Rückentrainer</h3>
+              <p>Deutsche Sporthochschule Köln</p>
+            </li>
+            <li>
+              <h3 className="font-semibold">Stressmanagement Coach</h3>
+              <p>Institut für Stressmanagement</p>
+            </li>
+          </ul>
         </div>
-      </section>
-
-      {/* Philosophy Section */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Meine Philosophie
-            </h2>
-            <p className="mt-4 text-xl text-gray-500">
-              {about?.philosophy}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {about?.values?.map((value: any, index: number) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  {value.title}
-                </h3>
-                <p className="text-gray-500">{value.description}</p>
-              </div>
-            ))}
-          </div>
+        
+        <div className="card md:col-span-2">
+          <h2>Mein Ansatz</h2>
+          <p>
+            Bei KRIA Training steht der Mensch im Mittelpunkt. Ich glaube an einen ganzheitlichen Ansatz, 
+            der körperliches Training mit mentaler Stärke und ausgewogener Ernährung verbindet.
+          </p>
+          <p>
+            Jeder Mensch ist einzigartig, daher erstelle ich individuelle Trainings- und Ernährungspläne, 
+            die auf Ihre persönlichen Ziele und Bedürfnisse abgestimmt sind. Mein Training ist nachhaltig 
+            und alltagstauglich, damit Sie langfristig Erfolg haben.
+          </p>
         </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-16">
-            Das sagen meine Klienten
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {about?.testimonials?.map((testimonial: any, index: number) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="flex items-center mb-4">
-                  {testimonial.image && (
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="h-12 w-12 rounded-full mr-4"
-                    />
-                  )}
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"{testimonial.quote}"</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </main>
-  )
+      </div>
+    </div>
+  );
 } 

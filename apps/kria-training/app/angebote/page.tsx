@@ -1,93 +1,136 @@
 import { client, angeboteQuery } from '../../lib/sanity'
 
-export default async function AngebotePage() {
-  const angebote = await client.fetch(angeboteQuery)
-
+export default function Angebote() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="text-center">
-          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            Unsere Angebote
-          </h1>
-          <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Entdecke unsere ganzheitlichen Trainings- und Coaching-Angebote für Körper, Geist und Seele.
+    <div className="container section">
+      <h1>Angebote</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="card">
+          <h2>Personal Training</h2>
+          <p>
+            Individuelles Einzeltraining, das genau auf Ihre Ziele und Bedürfnisse abgestimmt ist. 
+            Perfekt für maximale Ergebnisse in kürzester Zeit.
           </p>
+          <ul className="mt-4 space-y-2">
+            <li>✓ Individueller Trainingsplan</li>
+            <li>✓ Ernährungsberatung</li>
+            <li>✓ Fortschrittskontrolle</li>
+            <li>✓ Flexible Termine</li>
+          </ul>
         </div>
-      </section>
+        
+        <div className="card">
+          <h2>Gruppentraining</h2>
+          <p>
+            Trainieren Sie in kleinen Gruppen mit maximal 6 Teilnehmern. 
+            Motivierende Atmosphäre und professionelle Betreuung.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li>✓ Kleine Gruppen</li>
+            <li>✓ Günstigere Preise</li>
+            <li>✓ Gemeinsame Motivation</li>
+            <li>✓ Regelmäßige Termine</li>
+          </ul>
+        </div>
+        
+        <div className="card">
+          <h2>Online Training</h2>
+          <p>
+            Professionelles Training von überall aus. 
+            Perfekt für flexible Menschen mit wenig Zeit.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li>✓ Virtuelle Betreuung</li>
+            <li>✓ Trainingsvideos</li>
+            <li>✓ Ernährungspläne</li>
+            <li>✓ Wöchentliche Check-ins</li>
+          </ul>
+        </div>
+        
+        <div className="card">
+          <h2>Rückentraining</h2>
+          <p>
+            Spezielles Training zur Stärkung der Rückenmuskulatur und Verbesserung der Haltung. 
+            Ideal bei Rückenschmerzen und Verspannungen.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li>✓ Haltungsanalyse</li>
+            <li>✓ Spezielle Übungen</li>
+            <li>✓ Entspannungstechniken</li>
+            <li>✓ Präventionsprogramm</li>
+          </ul>
+        </div>
+        
+        <div className="card">
+          <h2>Ernährungsberatung</h2>
+          <p>
+            Individuelle Ernährungspläne und Beratung für Ihre Ziele. 
+            Ob Abnehmen, Muskelaufbau oder allgemeine Gesundheit.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li>✓ Ernährungsanalyse</li>
+            <li>✓ Individuelle Pläne</li>
+            <li>✓ Rezepte</li>
+            <li>✓ Regelmäßige Anpassungen</li>
+          </ul>
+        </div>
+        
+        <div className="card">
+          <h2>Stressmanagement</h2>
+          <p>
+            Lernen Sie, mit Stress umzugehen und Ihre mentale Gesundheit zu stärken. 
+            Kombination aus Bewegung und Entspannungstechniken.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li>✓ Atemübungen</li>
+            <li>✓ Meditation</li>
+            <li>✓ Progressive Muskelentspannung</li>
+            <li>✓ Stressbewältigungsstrategien</li>
+          </ul>
+        </div>
 
-      {/* Angebote Section */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-16 lg:grid-cols-2">
-            {angebote?.map((angebot: any) => (
-              <div key={angebot._id} className="flex flex-col">
-                {angebot.image && (
-                  <div className="flex-shrink-0 mb-8">
-                    <img
-                      className="w-full h-64 object-cover rounded-lg"
-                      src={angebot.image}
-                      alt={angebot.title}
-                    />
-                  </div>
-                )}
-                <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    {angebot.title}
-                  </h2>
-                  <p className="text-lg text-gray-500 mb-6">
-                    {angebot.longDescription}
-                  </p>
-                  <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                      Das erwartet dich:
-                    </h3>
-                    <ul className="space-y-3">
-                      {angebot.benefits?.map((benefit: string, index: number) => (
-                        <li key={index} className="flex items-start">
-                          <svg
-                            className="h-6 w-6 text-green-500 mr-2"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                          <span className="text-gray-600">{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-2xl font-bold text-gray-900">
-                        {angebot.price} €
-                      </p>
-                      {angebot.duration && (
-                        <p className="text-sm text-gray-500">
-                          Dauer: {angebot.duration}
-                        </p>
-                      )}
-                    </div>
-                    <a
-                      href={angebot.cta.link}
-                      className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700"
-                    >
-                      {angebot.cta.text}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="card">
+          <h2>Schwimmtraining</h2>
+          <p>
+            Professionelles Schwimmtraining für alle Leistungsniveaus. 
+            Von Technikverbesserung bis hin zu Wettkampfvorbereitung.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li>✓ Technikanalyse</li>
+            <li>✓ Individuelle Trainingspläne</li>
+            <li>✓ Videoanalyse</li>
+            <li>✓ Wettkampfvorbereitung</li>
+          </ul>
         </div>
-      </section>
-    </main>
-  )
+
+        <div className="card">
+          <h2>Aqua Fitness</h2>
+          <p>
+            Gelenkschonendes Training im Wasser. 
+            Ideal für Rehabilitation, Senioren und Menschen mit Gelenkproblemen.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li>✓ Gelenkschonend</li>
+            <li>✓ Effektives Ganzkörpertraining</li>
+            <li>✓ Verbesserte Beweglichkeit</li>
+            <li>✓ Spaß im Wasser</li>
+          </ul>
+        </div>
+
+        <div className="card">
+          <h2>Fitness Training</h2>
+          <p>
+            Modernes Fitness-Training mit Fokus auf funktionelle Bewegungen. 
+            Steigern Sie Kraft, Ausdauer und Beweglichkeit.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li>✓ Funktionelles Training</li>
+            <li>✓ Kraft- und Ausdauer</li>
+            <li>✓ Beweglichkeitstraining</li>
+            <li>✓ Individuelle Betreuung</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 } 

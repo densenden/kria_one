@@ -1,68 +1,75 @@
 export default function Datenschutz() {
   return (
-    <div className="min-h-screen bg-white py-16">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Datenschutzerklärung</h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-4 py-16">
+        <h1 className="text-3xl font-bold mb-8">Datenschutzerklärung</h1>
         
-        <div className="prose prose-lg">
-          <h2>1. Verantwortlicher</h2>
-          <p>
-            Kria Centro<br />
-            Musterstraße 123<br />
-            12345 Musterstadt<br />
-            Deutschland<br />
-            E-Mail: info@kria-centro.de
-          </p>
+        <div className="space-y-8">
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">1. Datenschutz auf einen Blick</h2>
+            <h3 className="text-xl font-semibold mb-2">Allgemeine Hinweise</h3>
+            <p className="mb-4">
+              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren 
+              personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene 
+              Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+            </p>
+          </section>
 
-          <h2>2. Erhebung und Verarbeitung personenbezogener Daten</h2>
-          <p>
-            Wir erheben und verarbeiten personenbezogene Daten nur, soweit dies für die Begründung, 
-            inhaltliche Ausgestaltung oder Änderung des Rechtsverhältnisses erforderlich ist.
-          </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">2. Hosting</h2>
+            <p className="mb-4">
+              Unser Hoster erhebt in sog. Logfiles folgende Daten, die Ihr Browser übermittelt:
+            </p>
+            <ul className="list-disc pl-6 mb-4">
+              <li>IP-Adresse</li>
+              <li>Datum und Uhrzeit der Anfrage</li>
+              <li>Zeitzonendifferenz zur Greenwich Mean Time (GMT)</li>
+              <li>Inhalt der Anforderung</li>
+              <li>Zugriffsstatus/HTTP-Statuscode</li>
+              <li>jeweils übertragene Datenmenge</li>
+              <li>Website, von der die Anforderung kommt</li>
+              <li>Browser</li>
+              <li>Betriebssystem und dessen Oberfläche</li>
+              <li>Sprache und Version der Browsersoftware</li>
+            </ul>
+          </section>
 
-          <h2>3. Zweck der Datenverarbeitung</h2>
-          <p>
-            Die Verarbeitung Ihrer personenbezogenen Daten erfolgt zur Durchführung unserer 
-            Retreat-Angebote, zur Abwicklung von Buchungen und zur Kommunikation mit Ihnen.
-          </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">3. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <h3 className="text-xl font-semibold mb-2">Datenschutz</h3>
+            <p className="mb-4">
+              Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. 
+              Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der 
+              gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+            </p>
+          </section>
 
-          <h2>4. Rechtsgrundlage der Datenverarbeitung</h2>
-          <p>
-            Die Verarbeitung Ihrer personenbezogenen Daten erfolgt auf Grundlage von Art. 6 Abs. 1 
-            lit. b DSGVO, soweit die Verarbeitung zur Erfüllung eines Vertrags oder zur Durchführung 
-            vorvertraglicher Maßnahmen erforderlich ist.
-          </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">4. Datenerfassung auf unserer Website</h2>
+            <h3 className="text-xl font-semibold mb-2">Kontaktformular</h3>
+            <p className="mb-4">
+              Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus 
+              dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks 
+              Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. 
+              Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+            </p>
+          </section>
 
-          <h2>5. Speicherdauer</h2>
-          <p>
-            Ihre personenbezogenen Daten werden gelöscht, sobald der Zweck der Speicherung entfällt 
-            oder Sie uns zur Löschung auffordern.
-          </p>
-
-          <h2>6. Ihre Rechte</h2>
-          <p>
-            Sie haben das Recht auf:
-          </p>
-          <ul>
-            <li>Auskunft über Ihre gespeicherten Daten</li>
-            <li>Berichtigung unrichtiger Daten</li>
-            <li>Löschung Ihrer Daten</li>
-            <li>Einschränkung der Verarbeitung</li>
-            <li>Datenübertragbarkeit</li>
-            <li>Widerspruch gegen die Verarbeitung</li>
-          </ul>
-
-          <h2>7. Zahlungsabwicklung</h2>
-          <p>
-            Für die Abwicklung von Zahlungen nutzen wir den Dienst Stripe. Die Zahlungsdaten werden 
-            direkt an Stripe übermittelt und nicht auf unseren Servern gespeichert.
-          </p>
-
-          <h2>8. Kontakt</h2>
-          <p>
-            Bei Fragen zum Datenschutz können Sie sich jederzeit an uns wenden:
-            datenschutz@kria-centro.de
-          </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">5. Rechte der betroffenen Person</h2>
+            <p className="mb-4">
+              Sie haben das Recht:
+            </p>
+            <ul className="list-disc pl-6 mb-4">
+              <li>gemäß Art. 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen</li>
+              <li>gemäß Art. 16 DSGVO unverzüglich die Berichtigung unrichtiger oder Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen</li>
+              <li>gemäß Art. 17 DSGVO die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen</li>
+              <li>gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen</li>
+              <li>gemäß Art. 20 DSGVO Ihre personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder die Übermittlung an einen anderen Verantwortlichen zu verlangen</li>
+              <li>gemäß Art. 7 Abs. 3 DSGVO Ihre einmal erteilte Einwilligung jederzeit gegenüber uns zu widerrufen</li>
+              <li>gemäß Art. 77 DSGVO sich bei einer Aufsichtsbehörde zu beschweren</li>
+            </ul>
+          </section>
         </div>
       </div>
     </div>

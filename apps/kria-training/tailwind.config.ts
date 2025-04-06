@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#990000', // kräftiges Dunkelrot
+        primary: '#3345a6', // Indigo-Blau
         secondary: {
           lime: '#c7e977',
           teal: '#76d7c4',
@@ -22,7 +22,8 @@ const config: Config = {
         background: '#fdfcfb',
       },
       fontFamily: {
-        montserrat: ['var(--font-montserrat)'],
+        grueber: ['Grueber', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       spacing: {
         'section': '4rem', // 4-6rem Abstand zwischen Abschnitten
@@ -37,5 +38,6 @@ const config: Config = {
     },
   },
   plugins: [],
-}
-export default config 
+};
+
+export default config; 

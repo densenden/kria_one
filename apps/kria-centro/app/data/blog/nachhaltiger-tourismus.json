@@ -1,0 +1,48 @@
+{
+  "title": "Nachhaltiger Tourismus im Amazonas",
+  "date": "2024-02-28",
+  "author": "Remo Icochea",
+  "gallery": [
+    {
+      "src": "/images/blog/tourismus-1.jpg",
+      "alt": "Nachhaltiges Dorf",
+      "caption": "Ein nachhaltig geführtes Dorf im Amazonas"
+    },
+    {
+      "src": "/images/blog/tourismus-2.jpg",
+      "alt": "Ökotourismus",
+      "caption": "Ökotourismus-Aktivitäten im Regenwald"
+    },
+    {
+      "src": "/images/blog/tourismus-3.jpg",
+      "alt": "Gemeinschaftsprojekt",
+      "caption": "Ein Gemeinschaftsprojekt für nachhaltigen Tourismus"
+    }
+  ],
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Nachhaltiger Tourismus ist ein wichtiger Aspekt unserer Arbeit im KRIA Centro. In diesem Artikel erfahren Sie, wie wir den Tourismus im Amazonas verantwortungsvoll gestalten."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unser Ziel ist es, den Besuchern nicht nur eine transformative Erfahrung zu bieten, sondern auch die lokalen Gemeinschaften zu unterstützen und die Umwelt zu schützen."
+    },
+    {
+      "type": "heading",
+      "text": "Verantwortungsvoller Tourismus"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wir arbeiten eng mit den lokalen Gemeinschaften zusammen und respektieren ihre Traditionen und Lebensweise. Der Tourismus soll den Menschen vor Ort zugutekommen, nicht schaden."
+    },
+    {
+      "type": "heading",
+      "text": "Umweltschutz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Umweltschutz ist ein zentraler Bestandteil unserer Arbeit. Wir setzen auf erneuerbare Energien, Müllvermeidung und den Schutz der natürlichen Ressourcen."
+    }
+  ]
+} 
