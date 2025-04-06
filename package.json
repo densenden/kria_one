@@ -7,15 +7,14 @@
     "dev": "pnpm clean && pnpm build:packages && pnpm dev:training",
     "dev:training": "cd apps/kria-training && pnpm dev --port 3002",
     "dev:centro": "cd apps/kria-centro && pnpm dev --port 3001",
-    "dev:admin": "cd apps/admin && pnpm dev --port 3003",
     "dev:ui": "cd packages/ui && pnpm dev",
     "dev:sanity": "cd packages/sanity-client && pnpm dev",
+    "build": "pnpm clean && pnpm build:packages && pnpm build:apps",
     "build:packages": "pnpm --filter \"@kria-one/sanity-client\" --filter \"@kria-one/ui\" build",
-    "build": "pnpm build:packages && pnpm --filter \"@kria-one/*\" build",
-    "start": "pnpm --filter \"@kria-one/*\" start",
-    "lint": "pnpm --filter \"@kria-one/*\" lint",
+    "build:apps": "pnpm --filter \"@kria-one/kria-training\" --filter \"@kria-one/kria-centro\" build",
     "clean": "rm -rf **/dist **/.next node_modules/.cache",
-    "import-data": "ts-node scripts/import-data.ts"
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "dependencies": {
     "@sanity/client": "^6.15.7",
@@ -27,6 +26,16 @@
   },
   "devDependencies": {
     "@swc/core": "^1.11.16",
-    "@types/node": "^22.14.0"
-  }
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.1.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.3.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
